@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <!-- Style -->
+    <style>
+        header {
+            height: 100px;
+            width: 100%;
+            background-color: red;
+        }
+
+        nav {
+            float: left;
+            width: 200px;
+            height: 250px;
+            background-color: darkgoldenrod;
+        }
+
+        .content {
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: green;
+            width: 100%;
+            height: 50px;
+            float: right;
+            text-align: center;
+        }
+    </style>
+    <!-- End of Style -->
+</head>
+<body style="background-color:burlywood">
+    <!-- Header -->
+    <header>
+        <h1 style="text-align:center; color:bisque">Custom Layout Page</h1>
+    </header>
+    <!-- End of Header -->
+
+    <p id="logout">Log out</p>
+
+    <!-- Left Sidebar -->
+    <nav>
+        <h3>Navigation</h3>
+
+        <a href="/Home/Index">Home</a><br />
+        <a href="/Users/Home/Index">Go to Users Area</a><br />
+        <a href="/Users/Home/Index">Go to Users Area</a>
+    </nav>
+    <!-- End of Left Sidebar -->
+    <!-- Content Body -->
+    <div class="content">
+        @RenderBody()
+        @RenderPage("/views/index.cshtml")
+        @RenderPage("/views/index2.cshtml")
+    </div>
+
+    <div style="background-color:rebeccapurple; color:antiquewhite; font-weight:bold">
+        @RenderSection("Note", false)
+    </div>
+    <!-- End of Content Body -->
+    <!-- Footer -->
+    <footer>
+        <h4>I am Footer.</h4>
+        <div style="background-color:red; color:aliceblue">@RenderSection("Footer", false)</div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="~/js/jQuery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $('#logout').click(function () {
+            window.location.href = "/Auth/Logout";
+        });
+    </script>
+</body>
+</html>
