@@ -26,6 +26,7 @@ namespace OurCoreMvcApp
                 options.IdleTimeout = TimeSpan.FromMinutes(1);//You can set Time   
             });
 
+            services.AddMvc();
             services.AddControllersWithViews();
         }
 
@@ -40,13 +41,11 @@ namespace OurCoreMvcApp
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
             //Session included
             app.UseSession();
-
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -39,6 +39,22 @@ namespace OurCoreMvcApp.Controllers
             return View();
         }
 
+        public IActionResult LoadPartialView(string passVal)
+        {
+            switch (passVal)
+            {
+                case "privacy":
+                    return View("Privacy", "Home");
+                case "users":
+                    return View("/Users/Home/Index");
+                case "promotional":
+                    return PartialView("_StaticPromotionalPage");
+
+                default:
+                    return PartialView("");
+            }
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -34,6 +34,9 @@
         }
     </style>
     <!-- End of Style -->
+
+    <script>
+        </script>]
 </head>
 <body style="background-color:burlywood">
     <!-- Header -->
@@ -47,17 +50,17 @@
     <!-- Left Sidebar -->
     <nav>
         <h3>Navigation</h3>
-
-        <a href="/Home/Index">Home</a><br />
-        <a href="/Users/Home/Index">Go to Users Area</a><br />
-        <a href="/Users/Home/Index">Go to Users Area</a>
+        <a class="nav-link" id="home">Home</a><br />
+        <a class="nav-link" id="privacy">Privacy</a><br />
+        <a class="nav-link" id="promotional">Promotional Details</a>
     </nav>
     <!-- End of Left Sidebar -->
+
     <!-- Content Body -->
     <div class="content">
         @RenderBody()
-        @RenderPage("/views/index.cshtml")
-        @RenderPage("/views/index2.cshtml")
+        @*@RenderPage("/views/index.cshtml")
+        @RenderPage("/views/index2.cshtml")*@
     </div>
 
     <div style="background-color:rebeccapurple; color:antiquewhite; font-weight:bold">

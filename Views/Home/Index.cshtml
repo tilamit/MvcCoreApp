@@ -5,15 +5,46 @@
 }
 
 
-<h2>Hello World 2021!</h2>
+<div class="hideParent">
+    <h2>Hello World 2021!</h2>
 
-Hello CompShop Application. I am in RenderBody section because there is no named section for me.
+    Hello MVC Core App! I am in a RenderBody section.
 
-@*@RenderPage("~/Views/Shared/_StaticPromotionalPage.cshtml")*@
+    @*@RenderPage("~/Views/Shared/_StaticPromotionalPage.cshtml")*@
 
-@section Note
-{
-    I am a Render Section Area.
-}
+    @section Note
+    {
+        <div class="hideParent">
+            I am a Render Section Area.
+        </div>
+    }
 
-<h2>Hello world</h2>
+    <h2>Hello world</h2>
+</div>
+
+@*<partial name="~/Views/Shared/_StaticPromotionalPage.cshtml" />*@
+
+<script src="~/js/jQuery-3.2.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.nav-link').click(function () {
+            $('.hideParent').hide();
+
+            var id = $(this).attr("id");
+            if (id == "home") {
+                $('.hideParent').show();
+                $("#result").hide();
+            }
+            else {
+                $("#result").show();
+                //$("#result").html("Loading ......");
+                $("#result").load('@Url.Action("LoadPartialView", "Home")', { passVal: id });
+                $(".nav-link").removeAttr('href');
+            }
+        });
+    });
+</script>
+
+@*Content loads here - Starts*@
+<div id="result"></div>
+@*Content loads here - Ends*@
