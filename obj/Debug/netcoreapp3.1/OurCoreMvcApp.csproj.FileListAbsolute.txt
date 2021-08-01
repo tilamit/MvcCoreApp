@@ -323,7 +323,6 @@ C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\bin\Debug\netcoreapp3.1\ru\
 C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\obj\Debug\netcoreapp3.1\OurCoreMvcApp.csproj.AssemblyReference.cache
 C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\obj\Debug\netcoreapp3.1\OurCoreMvcApp.AssemblyInfoInputs.cache
 C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\obj\Debug\netcoreapp3.1\OurCoreMvcApp.AssemblyInfo.cs
 C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\obj\Debug\netcoreapp3.1\OurCoreMvcApp.csproj.CoreCompileInputs.cache
@@ -401,3 +400,5 @@ C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\obj\Debug\netcoreapp3.1\Raz
 C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\obj\Debug\netcoreapp3.1\Razor\Views\Auth\Login.cshtml.g.cs
 C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutCustom.cshtml.g.cs
+C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\JavaScriptSession.cshtml.g.cs
+C:\Users\AT\source\repos\OurCoreMvcApp\OurCoreMvcApp\obj\Debug\netcoreapp3.1\OurCoreMvcApp.csproj.AssemblyReference.cache

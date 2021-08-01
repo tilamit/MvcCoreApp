@@ -39,6 +39,11 @@ namespace OurCoreMvcApp.Controllers
             return View();
         }
 
+        public IActionResult JavaScriptSession()
+        {
+            return View();
+        }
+
         public IActionResult LoadPartialView(string passVal)
         {
             switch (passVal)
@@ -49,6 +54,8 @@ namespace OurCoreMvcApp.Controllers
                     return View("/Users/Home/Index");
                 case "promotional":
                     return PartialView("_StaticPromotionalPage");
+                case "javaScript":
+                    return View("JavaScriptSession", "Home");
 
                 default:
                     return PartialView("");

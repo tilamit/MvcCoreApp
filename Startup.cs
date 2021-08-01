@@ -52,7 +52,7 @@ namespace OurCoreMvcApp
             {
                 endpoints.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Home}/{action=JavaScriptSession}/{id?}");
 
                 endpoints.MapControllerRoute(
                 name: "areaRoute",
